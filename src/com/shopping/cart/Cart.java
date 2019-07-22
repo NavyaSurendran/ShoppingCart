@@ -65,10 +65,7 @@ public class Cart {
 				
 		while (totalCost< MAX_AMOUNT) {
 			
-			if(totalCost >MAX_AMOUNT/2) {
-				cart = cart.stream().filter((item) -> item.getRating() > RATING)
-						.filter((item) -> item.getPrice() + item.getShippingCost() < MAX_AMOUNT/3).collect(Collectors.toList());
-			}
+			
 			CartItem item = pickItemWithBestRating(cart);
 			
 			
