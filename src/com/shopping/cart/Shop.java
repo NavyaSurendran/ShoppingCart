@@ -19,14 +19,14 @@ import com.shopping.cart.util.ShoppingCartUtil;
  */
 public class Shop {
 
-	private List<Category> categoryList = new ArrayList<>();
+	private List<Category> categoryList;
 	
 	
 	/**
 	 * 
 	 */
-	public Shop() {
-		//this.categoryList = createCategories();
+	public Shop(List<category> categoryList) {
+		this.categoryList = categoryList;
 	}
 	
 	/**
